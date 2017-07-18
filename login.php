@@ -10,25 +10,31 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Hershey National Honor Society</title>
+		<title>Log In | Hershey National Honor Society</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="The official website for Hershey High School's National Honor Society." />
 		<meta name="keywords" content="NHS,Hershey,High,School,Hershey High School,Derry,Derry Township,Hours,Sponsored Events" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link rel="stylesheet" type="text/css" href="./css/login.css">
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,700" rel="stylesheet">
 	</head>
 	<body>
 		<div id="wrapper">
 			<header id="header-content">
 				<hr>
-				<h1>HERSHEY NHS</h1>
-
-				<p>Welcome to the official website of Hershey High School's National Honor Society. If you are a member, tap or click the "log in" button to view service hours, submit absence reports, and sign up for events.</p>
+				<h1>LOG IN</h1>
 				<hr>
-				<div id="buttons" class="hidden open-buttons">
-					<a class="big-button" id="login-button" href="./login.php">LOG IN</a>
+
+				<div id="login">
+					<form action="" method="post">
+						<input id="username" name="username" type="text" placeholder="Username" /><br />
+						<input id="stuid" name="stuid" type="password" placeholder="School ID" /><br />
+
+						<input id="submit" type="submit" name="submit" value="LOG IN"></input><br/><br />
+
+						<a href="/">< GO BACK</a>
+					</form>
 				</div>
 
 				<footer>
@@ -40,6 +46,4 @@
 		<div id="bg-cover"></div>
 		<div id="bg"></div>
 	</body>
-
-	<script src="./js/script.js"></script>
 </html>

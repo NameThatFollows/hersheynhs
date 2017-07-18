@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+/* TAGS */
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    min-width: 320px;
+    background-color: #EEEEEE;
+}
+
+hr {
+    margin: 2em 0;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 2.5em;
+    letter-spacing: .07em;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    margin: 20px 0 10px 0;
+}
+
+i.fa {
+    margin-bottom: 10px;
+}
+
+a {
+    display: inline;
+    text-decoration: none;
+    color: inherit;
+    white-space: nowrap;
+}
+
+p {
+    line-height: 1.2em;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+ul li a {
+    display: block;
+    padding: 20px 0;
+}
+
+footer {
+    color: #000000;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 1.2em;
+    line-height: 1.2;
+    margin: 3em 0 1em 0;
+}
+
+nav {
+    z-index: 1000;
+    position: absolute;
+    top: 101.5px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    text-align: center;
+    color: #EEEEEE;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+li {
+    display: inline-block;
+    min-width: 135px;
+    margin: 0;
+}
+
+li.active {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+li:hover {
+    background-color: rgba(0, 0, 0, .7);
+}
+
+/* CLASSES */
+
+.main-content {
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 900px;
+}
+
+/* IDs */
+
+#header-wrapper {
+    width: 100%;
+    z-index: 3;
+    color: #EEEEEE;
+}
+
+#header-content {
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 2000;
+}
+
+#header-image-container {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#header-image-cover {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .7);
+    height: 200px;
+    width: 100vw;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+#header-image {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-image: url('../images/bg.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100vw;
+    z-index: 1;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 600px) {
+}
+
+@media (max-width: 800px) {
+
+}
+
+@media (max-width: 1280px) {
+
+}
+
+@media (max-width: 1600px) {
+
+}
