@@ -7,8 +7,7 @@
 /* TAGS */
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
-    min-width: 320px;
+    font-family: 'Lato', sans-serif;
     background-color: black;
 }
 
@@ -26,21 +25,21 @@ h1 {
 
 a {
     display: inline;
-    color: #FFFFFF;
+    color: #DDDDDD;
     white-space: nowrap;
 }
 
 p {
     font-size: 1.2em;
-    text-transform: uppercase;
     width: 95%;
     margin: 0 auto;
-    letter-spacing: .15em;
     line-height: 1.2;
+    word-wrap: break-word;
+    max-width: 400px;
 }
 
 footer {
-    color: white;
+    color: #DDDDDD;
     bottom: 20px;
     text-align: center;
     width: 100%;
@@ -52,19 +51,19 @@ footer {
 input {
     width: 100%;
     max-width: 300px;
-    margin: 10px;
+    margin: 10px 0;
     padding: 15px 20px;
     font-size: 1.2em;
     box-sizing: border-box;
-    font-family: 'Source Sans Pro', sans-serif;
-    color: white;
+    font-family: 'Lato', sans-serif;
+    color: #DDDDDD;
     background: none;
     outline: none;
-    border: 2px solid #EEEEEE;
+    border: 2px solid #DDDDDD;
 }
 
 input::placeholder {
-    color: #CCCCCC;
+    color: #BBBBBB;
 }
 
 #submit {
@@ -79,10 +78,15 @@ input::placeholder {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+.error {
+    font-weight: 700;
+    color: white;
+}
+
 /* IDs */
 
 #wrapper {
-    color: #EEEEEE;
+    color: #DDDDDD;
     display: flex;
     align-items: center;
     width: 100%;
@@ -102,7 +106,7 @@ input::placeholder {
 
 #bg-cover {
     position: fixed;
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, .4);
     min-height: 100vh;
     width: 100vw;
     z-index: 2;
@@ -111,12 +115,11 @@ input::placeholder {
 }
 
 #bg {
-    display: block;
     position: fixed;
     top: 0;
     left: 0;
     background-image: url('../images/bg.jpg');
-    background-position: 50% 50%;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -126,25 +129,8 @@ input::placeholder {
 
 
 /* MEDIA QUERIES */
-
 @media (min-width: 600px) {
     p {
         line-height: 1.5em;
     }
-
-    input {
-        
-    }
-}
-
-@media (max-width: 800px) {
-
-}
-
-@media (max-width: 1280px) {
-
-}
-
-@media (max-width: 1600px) {
-
 }

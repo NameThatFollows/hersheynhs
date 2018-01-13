@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: #FCFCFC;
+    color: #757575;
+    margin: 10px;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 5px 0;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.25em;
+}
+
+h5 {
+    font-size: 1.125em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+p {
+    margin: 0 0;
+}
+
+div.half {
+    width: 49%;
+    display: inline-block;
+}
+
+div.halfleft {
+    margin-right: 1%;
+}
+
+div.halfright {
+    margin-left: 1%;
+}
+
+form {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+input {
+    display: block;
+    background: inherit;
+    border: none;
+    border-bottom: 1px solid #757575;
+    padding: 0 0 10px;
+    width: 100%;
+    text-align: center;
+    font-family: inherit;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:focus::placeholder {
+    display: none;
+}
+
+input[type=date] {
+    text-align: left;
+}
+
+input#eventname {
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+input[type=checkbox] {
+    transform: scale(1.25);
+    width: initial;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin: 25px 0 5px;
+    font-size: .8em;
+}
+
+textarea {
+    font-family: inherit;
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    margin: 10px 0 0 0;
+    padding: 10px 50px;
+}

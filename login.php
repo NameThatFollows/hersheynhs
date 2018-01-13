@@ -17,7 +17,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<link rel="stylesheet" type="text/css" href="./css/login.css">
-		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"> 
 	</head>
 	<body>
 		<div id="wrapper">
@@ -28,7 +28,16 @@
 
 				<div id="login">
 					<form action="" method="post">
-						<input id="username" name="username" type="text" placeholder="Username" /><br />
+						<?php 
+							if (!empty($error)) {
+								echo '<p class="error">ERROR: '.$error.'</p>';
+							}
+							if (isset($_GET['nosession'])) {
+								echo '<p class="error">Please log in to see this content.</p>';
+							}
+							echo '<br />';
+						?>
+						<input id="username" name="username" type="text" placeholder="Username" autofocus/><br />
 						<input id="stuid" name="stuid" type="password" placeholder="School ID" /><br />
 
 						<input id="submit" type="submit" name="submit" value="LOG IN"></input><br/><br />
@@ -37,10 +46,7 @@
 					</form>
 				</div>
 
-				<footer>
-					&copy; 2017 Hershey NHS. All rights reserved. <br />
-					Made with &#10084 by <a href="http://www.jamesjlu.com" target="blank">James Lu</a>.
-				</footer>
+				<?php include 'footer.php'; ?>
 			</header>
 		</div>
 		<div id="bg-cover"></div>

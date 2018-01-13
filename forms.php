@@ -25,8 +25,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Dashboard | Hershey National Honor Society</title>
-		<link rel="stylesheet" type="text/css" href="./css/dashboard.css">
+		<title>Forms & Documents | Hershey National Honor Society</title>
+		<link rel="stylesheet" type="text/css" href="./css/info.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
 	</head>
@@ -44,23 +44,22 @@
 
 			<nav class="top-nav">
 				<ul>
-					<li class="active"><a href="/dashboard.php">Dashboard</a></li><li><a href="/hours.php">Hours</a></li><li><a href="/events.php">Events</a></li><li><a href="/forms.php">Forms/Docs</a></li><li><a href="/faq.php">FAQ</a></li>
+					<li><a href="/dashboard.php">Dashboard</a></li><li><a href="/hours.php">Hours</a></li><li><a href="/events.php">Events</a></li><li class="active"><a href="/forms.php">Forms/Docs</a></li><li><a href="/faq.php">FAQ</a></li>
 				</ul>
 			</nav>
 		</header>
 
 		<section id="banner">
-			<div id="banner-image">
+			<div id="banner-image" style="background-image: url(/images/docs.jpg);">
 				<div id="banner-text">
-					<h1>Hello, <?php echo $name;?>!</h1>
-					<p>This is your new Hershey NHS Dashboard.</p>
-					<p>Click on any of the links above to view your completed service hours, sign up for events, submit absence reports, and view meeting agendas and other important documents. </p>
+					<h1>Forms & Documents</h1>
+					<p>Submit absence reports and view important documents</p>
 				</div>
 			</div>
 		</section>
-
+		
 		<section id="main-content">
-			<?php include 'pages/dashboard.html'; ?>
+		<?php include 'pages/forms.html'; ?>
 		</section>
 
 		<?php include 'footer.php'; ?>

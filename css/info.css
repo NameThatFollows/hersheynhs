@@ -53,13 +53,13 @@ section {
     margin: 0 auto;
 }
 
+div {
+    overflow: hidden;
+}
+
 img {
     max-width: 100%;
     height: auto !important;
-}
-
-div {
-    overflow: hidden;
 }
 
 footer {
@@ -72,7 +72,45 @@ footer {
 }
 
 footer a {
-    color: #888888;
+    color: inherit;
+}
+
+form {
+    margin: 20px 0 0 0;
+}
+
+button {
+    width: 150px;
+    height: 35px;
+    font-size: 1em;
+    font-family: inherit;
+    font-weight: 700;
+}
+
+button#add {
+    width: 250px;
+    height: 50px;
+    font-size: 1.5em;
+    font-family: inherit;
+    font-weight: 700;
+}
+
+.dense {
+    margin: 0 0 15px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #888888;
+    margin: 20px 0 0;
+}
+
+.save {
+    margin: 20px 0 0;
+    width: 100%;
+    height: 100px;
+    font-size: 3em;
+    font-family: inherit;
 }
 
 .row {
@@ -81,6 +119,16 @@ footer a {
     width: 100%;
     position: relative;
     margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.flex-child {
+    margin: 10px;
 }
 
 #logo {
@@ -109,6 +157,28 @@ footer a {
 
 #nav-button:hover {
     background: #333333;
+    transition: all 0.2s ease;
+}
+
+.signup-button {
+    width: 200px;
+    background: black;
+    list-style: none;
+    display: inline-block;
+    color: white;
+    line-height: 3;
+    margin: 0 0 15px;
+}
+
+.signup-button a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s ease;
+}
+
+.signup-button a:hover {
+    background: #444444;
     transition: all 0.2s ease;
 }
 
@@ -146,6 +216,10 @@ nav ul li a:hover {
     transition: all 0.2s ease;
 }
 
+.center {
+    text-align: center;
+}
+
 table {
     margin: 0 auto;
     border-collapse: collapse;
@@ -170,6 +244,41 @@ tr:nth-child(even) {
     overflow-x: auto;
 }
 
+.big-text {
+    font-size: 1.5em;
+}
+
+.big-number {
+    font-size: 4em;
+}
+
+.bigger-number {
+    font-size: 6em;
+}
+
+.error {
+    font-weight: 700;
+    color: #AA0000;
+}
+
+.success {
+    font-weight: 700;
+    color: #006600;
+}
+
+.status {
+    margin: 0;
+}
+
+.button-row {
+    display: inline;
+}
+
+#upload-csv {
+    margin: 20px auto;
+    text-align: center;
+}
+
 #banner {
     margin-bottom: 20px;
     color: #EEEEEE;
@@ -177,41 +286,41 @@ tr:nth-child(even) {
 }
 
 #banner-image {
-    background-image: url("/images/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
-    height: 70vh;
-    min-height: 400px;
+    background-position: center;
     width: 100%;
-    position: relative;
 }
 
 #banner-text {
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left: 50%;
+    display: block;
+    margin: 0 auto;
     width: 90%;
     max-width: 1200px;
-    padding: 0 20px 50px;
+    padding: 20px 20px 30px;
 }
 
 #banner-text h1 {
-    font-size: 4.5em;
+    font-size: 3.5em;
     font-weight: 700;
-    padding-bottom: 20px;
+    margin: 0;
 }
 
 #banner-text p {
-    font-size: 1.7em;
+    font-size: 1.2em;
     line-height: 1.6;
+    margin: 0;
     padding: 0px;
 }
 
 #main-content {
     width: 90vw;
     max-width: 960px;
+}
+
+#editHome, #editDashboard, #editForms, #editFAQ {
+    height: 400px;
+    width: 100%;
 }
 
 @media (max-width: 650px) {
@@ -234,13 +343,13 @@ tr:nth-child(even) {
     }
 
     #banner-text h1 {
-        font-size: 3.25em;
+        font-size: 2.5em;
         font-weight: 700;
         padding-bottom: 20px;
     }
     
     #banner-text p {
-        font-size: 1.1em;
+        font-size: 1em;
         line-height: 1.3;
         padding: 0px;
     }

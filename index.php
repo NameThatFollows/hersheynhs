@@ -16,30 +16,36 @@
 		<meta name="keywords" content="NHS,Hershey,High,School,Hershey High School,Derry,Derry Township,Hours,Sponsored Events" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link rel="stylesheet" type="text/css" href="./css/style.css">
-		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet"> 
+		<link rel="stylesheet" type="text/css" href="./css/dashboard.css">
 	</head>
 	<body>
-		<div id="wrapper">
-			<header id="header-content">
-				<hr>
-				<h1>HERSHEY NHS</h1>
-
-				<p>Welcome to the official website of Hershey High School's National Honor Society. If you are a member, tap or click the "log in" button to view service hours, submit absence reports, and sign up for events.</p>
-				<hr>
-				<div id="buttons" class="hidden open-buttons">
-					<a class="big-button" id="login-button" href="./login.php">LOG IN</a>
+		<header class="top">
+			<div class="row">
+				<div id="logo">
+					<a href="/">HERSHEY NHS</a>
 				</div>
+				<div id="login">
+					<a href="/login.php" id="nav-button">LOG IN</a>
+				</div>
+			</div>
+		</header>
+		<section id="banner">
+			<div id="banner-image">
+				<div id="banner-text">
+					<h1>Hi There!</h1>
+					<p>Welcome to the official website of Hershey High School's National Honor Society. </p>
+					<p>Tap or click <strong>Log In</strong> to view service hours, sign up for events, and submit absense reports.</p>
+				</div>
+			</div>
+		</section>
 
-				<footer>
-					&copy; 2017 Hershey NHS. All rights reserved. <br />
-					Made with &#10084 by <a href="http://www.jamesjlu.com" target="blank">James Lu</a>.
-				</footer>
-			</header>
-		</div>
-		<div id="bg-cover"></div>
-		<div id="bg"></div>
+		<section id="main-content">
+			<div>
+			<?php include 'pages/home.html'; ?>
+			</div>
+		</section>
+
+		<?php include 'footer.php'; ?>
 	</body>
-
-	<script src="./js/script.js"></script>
 </html>
