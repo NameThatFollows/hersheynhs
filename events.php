@@ -49,10 +49,10 @@
 				</div>
 			</div>
 		</section>
-		
+
 		<section id="main-content">
 			<div class="center">
-				<iframe src="https://calendar.google.com/calendar/embed?src=skonduru%40hershey.k12.pa.us&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe> 
+				<iframe src=<?php echo $database['eventCalendarLink']; ?> style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 				<table>
 				<?php
 					$result = $connection->query("SELECT eventname, startdate, enddate, link, sponsored, description FROM events ORDER BY enddate, eventname");
@@ -83,24 +83,24 @@
 							} elseif ($row['sponsored']) {
 								echo '<h5 class="dense">NHS Sponsored Event</h5>';
 							}
-							
+
 							if ($row["description"] !== ""){
 								echo '<p">'.nl2br($row["description"]).'</p>';
 							} else {
 								echo '<p">There is no description for this event.</p>';
 							}
-							
+
 							if ($row["link"] !== "") {
 								echo '<li class="signup-button"><a href="'.$row["link"].'"target="blank">Sign Up</a></li>';
 							}
 							echo '</tr><hr />';
 						}
-						
+
 						echo '</table>';
 					} else {
 						echo '</table><h3">There are currently no events to sign up for. </h3>';
 					}
-					
+
 					$connection->close();
 				?>
 
