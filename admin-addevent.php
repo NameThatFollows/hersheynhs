@@ -24,10 +24,10 @@
             if (isset($_POST['add'])) {
                 echo '<h2>New Event</h2>';
                 echo '<form action="includes/processevent.php" method="post">';
-                echo '<label>Event Name</label><input required id="eventname" name="eventname" type="text" /></div>';
+                echo '<label>Event Name</label><input required id="eventname" autofocus="autofocus" name="eventname" type="text" /></div>';
                 echo '<label>Event Dates</label><p><strong>FOR multi-day events</strong>, fill start and end dates normally. <br /><strong>FOR one-day events</strong>, put the same date in start and end dates. <br /><strong>FOR events with no date</strong>, leave the dates blank.</p>';
-                echo '<div class="half halfleft"><label>Start Date</label><input id="startdate" name="startdate" type="date" /></div>';
-                echo '<div class="half halfright"><label>End Date</label><input id="enddate" name="enddate" type="date" /></div>';
+                echo '<div class="half halfleft"><label>Start Date</label><input id="startdate" placeholder="YYYY-MM-DD" name="startdate" type="date" /></div>';
+                echo '<div class="half halfright"><label>End Date</label><input id="enddate" placeholder="YYYY-MM-DD" name="enddate" type="date" /></div>';
                 echo '<label>Signup Link</label><input id="link" name="link" type="text" />';
                 echo '<label>Sponsored Event?</label> <input id="sponsored" name="sponsored" type="checkbox" />';
                 echo '<label>Event Description</label><textarea id="description" name="description" type="text" ></textarea>';

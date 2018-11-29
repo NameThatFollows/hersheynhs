@@ -63,15 +63,16 @@ $connection = new mysqli($database['host'], $database['user'], $database['pass']
 				<li>Click <b>Import CSV</b> and wait for the process to finish. </li>
 			</ol>
 
-			<form action='admin-editmembers.php' method='post' id="upload-csv">
-				<input size='50' type='file' name='filename' id='filename'>
-				<input type='submit' name='submit' value='Upload CSV'>
+			<form enctype='multipart/form-data' action='admin-editmembers.php' method='post' id="upload-csv">
+				<input size='50' type='file' name='filename' id='filename' />
+				<input type='submit' name='submit' value='Upload CSV' />
 			</form>
 
 			<?php
 				if (isset($_POST['submit'])) {
 					$filename = $_FILES['filename']['name'];
 					$ext = pathinfo($filename, PATHINFO_EXTENSION);
+					echo $filename;
 					if ($ext == "csv") {
 						if (is_uploaded_file($_FILES['filename']['tmp_name'])) {
 							echo '<p class="success status">' . 'File '. $_FILES['filename']['name'] .' was uploaded successfully. ' . '</p>';

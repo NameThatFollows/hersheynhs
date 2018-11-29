@@ -52,6 +52,7 @@
 		
 		<section id="main-content">
 			<div class="center">
+				<iframe src="https://calendar.google.com/calendar/embed?src=skonduru%40hershey.k12.pa.us&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe> 
 				<table>
 				<?php
 					$result = $connection->query("SELECT eventname, startdate, enddate, link, sponsored, description FROM events ORDER BY enddate, eventname");
